@@ -1,3 +1,17 @@
+/********************************************************************/
+// MODULE:          JAM
+// FILE NAME:       JAM.v
+// VERSION :        1.0
+// DATE :           2023 02 23
+// AUTHOR:          Kun-Yong Chang
+// CODE TYPE:       RTL
+// DESCRIPTION:     B_IC_CONTEST_2022
+// COPYRIGHT:       © 2023 Multimedia and Communication IC Design Lab
+//
+//
+// MODIFICATION HISTORY:
+// None
+/********************************************************************/
 module JAM (
 input CLK,
 input RST,
@@ -66,7 +80,7 @@ always@(*)begin:FSM_NXT
         end
 
         OUTPUT:begin
-            next_state = OUTPUT;
+            next_state = IDLE;
         end
     endcase
 end
